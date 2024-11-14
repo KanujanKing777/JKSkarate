@@ -1,0 +1,6 @@
+body{
+    background: linear-gradient(to right, rgba(18, 16, 21, 0.75) 50%, rgba(18, 16, 21, 0.75) 50%), url('war3.jpg') right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}

@@ -1,0 +1,81 @@
+  body{
+    background: linear-gradient(to right, rgba(18, 16, 21, 0.75) 50%, rgba(18, 16, 21, 0.75) 50%), url('war2.jpg') right center;
+
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10vh;
+    width: 80%;
+    height: 100vh;
+    max-width: 1200px;
+  }
+
+  .box {
+    position: relative;
+    overflow: hidden;
+    background: rgba(246, 245, 245, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    min-height: 50vh;
+    max-height: 50vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+  }
+
+  .box img {
+    width: 100%;
+    transition: height 0.3s ease;
+    height: 75%;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .text {
+    padding: 10px;
+    height: 25%;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    transition: height 0.3s ease, padding-top 0.3s ease;
+    overflow: hidden;
+  }
+
+  .box:hover img {
+    height: 33%;
+  }
+
+  .box:hover .text {
+    height: 67%;
+    text-align: left;
+  }
+
+  .long-text {
+    display: none;
+  }
+
+  .box:hover .short-text {
+    display: none;
+  }
+
+  .box:hover .long-text {
+    display: block;
+  }
+
+  button{
+    background: rgba(249, 249, 249, 0.1);
+    padding: 2vh;
+    height: max-content;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+    color:#fff;
+  }

@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgba(18, 16, 21, 0.75) 50%, rgba(18, 16, 21, 0.75) 50%), url('background.jpg') right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.content-box {
+    font-family: 'Arial', 'Helvetica Neue', sans-serif;
+    /* Use a clean, sans-serif font */
+    font-size: 16px;
+    /* Base font size for good readability */
+    line-height: 1.6;
+    width: 80vw;
+    max-width: 90vw;
+    margin: 5vh;
+    background: rgba(247, 247, 247, 0.1);
+    padding: 20px;
+    height: max-content;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+}
+
+.content-box h2 {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.content-box h2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px; /* Adjust position if needed */
+    height: 2px; /* Thickness of underline */
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.content-box h2:hover::after {
+    transform: scaleX(1);
+  }
+.content-box p {
+    text-align: justify;
+}
+
+blockquote {
+    font-style: italic; /* Italicize to distinguish quotes */
+    color: #aeaeae; /* Softer color for readability */
+    border-left: 4px solid #ccc; /* Left border for emphasis */
+    padding-left: 1vw; /* Space between border and text */
+    margin: 1em 0; /* Spacing around the blockquote */
+    line-height: 1.6;
+    font-size: 1.1em; /* Slightly larger font size for emphasis */
+  }

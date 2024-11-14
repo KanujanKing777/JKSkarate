@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="progressbar.css">
+
+    <link rel="stylesheet" href="ContactUs.css">
+    <script src="fun.js"></script>
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="section" onclick="clickingfun(1)">Home</div>
+        <div class="section" onclick="clickingfun(2)">About</div>
+        <div class="section" onclick="clickingfun(3)">Locations</div>
+        <div class="section" onclick="clickingfun(4)">Tournaments</div>
+        <div class="section" onclick="clickingfun(6)">Articles</div>
+        <div class="section" onclick="clickingfun(7)">Contact Us</div>
+    </div>
+    <!-- <div class="content-box">
+        <h2>Direct Debit Contract Holders</h2>
+        <p>If you are an existing JKS Karate student paying via Direct Debit, click the button below to be taken to our direct debit self-service page</p>
+        <a href="#" class="button">Direct Debit Self Service Portal</a>
+    </div>
+
+    <div class="content-box">
+        <h2>Membership Enquiries</h2>
+        <p>JKS Karate has hundreds of dojos across Australia, New Zealand, and the United Kingdom. New students of all ages and abilities are welcome</p>
+        <a href="#" class="button">Enquire Here!</a>
+    </div> -->
+    
+    <div class="content-box2">
+        <h2 style="color: #fff;text-align:center;">General Enquiry Form</h2>
+        <form class="contact-form">
+            <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required placeholder="First name">
+            </div>
+    
+            <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required placeholder="Last name">
+            </div>
+    
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Email address">
+            </div>
+    
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone number">
+            </div>
+    
+            <div class="input-group">
+                <label for="enquiry-type">Select Enquiry Type</label>
+                <select id="enquiry-type" name="enquiry-type">
+                    <option value="">Please select...</option>
+                    <option value="membership">Membership</option>
+                    <option value="general">General Enquiry</option>
+                </select>
+            </div>
+    
+            <div class="input-group">
+                <label for="suburb">Town or Suburb</label>
+                <input type="text" id="suburb" name="suburb" placeholder="Town">
+            </div>
+    
+            <div class="input-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="">Please select...</option>
+                    <option value="srilanka">Sri Lanka</option>
+                    
+                </select>
+            </div>
+    
+            <div class="input-group">
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="postcode" placeholder="Postcode">
+            </div>
+    
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+    
+            <div class="submit-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="location-box">
+        <div class="office-location">
+            <h2>Head Office Location and Contact Details</h2>
+            <h3>Jaffna</h3>
+            <p>12 kalasali lane,Raja street,jaffna, Jaffna, Sri Lanka</p>
+            <p>P: +94 77 502 6827</p>
+            <p>Email: Jkskarateinternational@gmail.com </p>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
