@@ -59,7 +59,7 @@ label {
     font-weight: 300;
 }
 
-input, select, textarea {
+input, select, textarea, option {
     padding: 12px;
     border-radius: 6px;
     
@@ -116,6 +116,6 @@ textarea {
     align-items: center;
     height: 100vh;
     padding: 50px;
-    background: linear-gradient(to right,  rgba(18,16,21, 0.75) 50%, rgba(18,16,21, 0.75) 50%), url('karatejaffna.jpg') right center;
+    background: linear-gradient(to right,  rgba(18,16,21, 0.75) 50%, rgba(18,16,21, 0.75) 50%), url('images/karatejaffna2.jpeg') right center;
     background-size: cover;
 }

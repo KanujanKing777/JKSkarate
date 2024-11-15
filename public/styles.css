@@ -113,7 +113,7 @@ body {
     width: 97%;
     height: 100vh;
     transition: transform 0.3s ease-in-out;
-    background: linear-gradient(to right,  rgba(18,16,21, 0.35) 50%, rgba(18,16,21, 0.35) 50%), url('karateforeveryone.jpg') right center;
+    background: linear-gradient(to right,  rgba(18,16,21, 0.35) 50%, rgba(18,16,21, 0.35) 50%), url('images/karateforeveryone.jpeg') right center;
     background-size: cover;
     background-position: top;
     display: flex;
@@ -125,7 +125,7 @@ body {
     width: 97%;
     height: 100vh;
     transition: transform 0.3s ease-in-out;
-    background: linear-gradient(to right,  rgba(18,16,21, 0.45) 50%, rgba(18,16,21, 0.45) 50%), url('benefits.jpg') right center;
+    background: linear-gradient(to right,  rgba(18,16,21, 0.65) 50%, rgba(18,16,21, 0.65) 50%), url('images/benefits.jpeg') right center;
     background-size: cover;
     background-position: top;
     display: flex;
@@ -198,7 +198,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: rgba(18,16,21, 0.3);
-    background: linear-gradient(to right,  rgba(18,16,21, 0.4) 50%, rgba(18,16,21, 0.4) 50%), url('karateplayer2.webp') right center;
+    background: linear-gradient(to right,  rgba(18,16,21, 0.7) 50%, rgba(18,16,21, 0.7) 50%), url('images/karateplayer.jpeg') right center;
     background-size: cover;
         background-position: top;
 
