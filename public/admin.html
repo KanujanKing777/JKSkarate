@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>JKS Admin</title>
+    <script defer="defer" src="static/js/main.fbc4068e.js"></script>
+    <link href="static/css/main.d16a99af.css" rel="stylesheet">
+</head>
+<script>// This script will execute as soon as the page is loaded
+    window.onload = function () {
+        // Display a prompt dialog to get user input
+        var userInput = prompt("Enter Admin Password:", "");
+
+    // Mask the password input with asterisks for display
+        if(userInput == "JKSKarate"){
+            document.getElementById("root").style.display = "block";
+        }
+        // Log the user input to the console
+        console.log("Wrong Password");
+    };
+    </script>
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" style="display: none;"></div>
+</body>
+
+</html>

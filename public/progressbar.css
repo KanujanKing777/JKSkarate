@@ -1,9 +1,36 @@
+/* .menu {
+    position: relative;
+    display: block;
+}
+
+/* Menu Icon */
+/* .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+} */
+
+/* Progress Bar Container */
+/* .progress-bar-container {
+    display: block; /* Hidden by default; shown when menu icon is clicked */
+/*} */
+
+/* Original Progress Bar Styles */
+.menu-icon{
+    display: none;
+}
 .progress-bar {
+    color:white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    width: 75%;
+    width: 100%;
     max-width: 700px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
@@ -44,4 +71,38 @@
 .progress-bar .section:hover::before {
     transform: translateX(-50%) scale(1.5);
     opacity: 1;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show menu icon on mobile */
+    }
+
+    .progress-bar {
+        align-items: stretch;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .progress-bar .section {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .progress-bar {
+        padding: 8px;
+        width: 95%;
+    }
+
+    .progress-bar .section {
+        font-size: 10px;
+    }
+
+    .progress-bar .section::before {
+        width: 6px;
+        height: 6px;
+    }
 }

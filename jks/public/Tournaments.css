@@ -1,0 +1,7 @@
+  body{
+    background: linear-gradient(to right, rgba(18, 16, 21, 0.75) 50%, rgba(18, 16, 21, 0.75) 50%), url('images/war2.jpeg') right center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+

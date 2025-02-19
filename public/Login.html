@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="progressbar.css">
+    <link rel="stylesheet" href="ContactUs.css">
+    <script src="fun.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore-compat.js"></script>
+<script>
+  // Your Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC4L7yOaZEusDDLXdLPNrC6TxOEcLcJmQM",
+    authDomain: "jkskarate.firebaseapp.com",
+    projectId: "jkskarate",
+    storageBucket: "jkskarate.firebasestorage.app",
+    messagingSenderId: "474130930599",
+    appId: "1:474130930599:web:018ac3d8778ed034e57482"
+  };
+
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+  function createUser() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var displayName = document.getElementById("full-name").value;
+    var address = document.getElementById("address").value;
+    var weight = document.getElementById("weight").value;
+    var height = document.getElementById("height").value;
+    var NIC = document.getElementById("NIC").value;
+    var dob = document.getElementById("dob").value;
+    var phone = document.getElementById("phone").value;
+    var profession = document.getElementById("profession").value;
+    var bloodgroup = document.getElementById("blood").value;
+
+    // Create user with email and password
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .then(function (userCredential) {
+        // User successfully created
+        var user = userCredential.user;
+
+        // Update user profile
+        return user.updateProfile({
+          displayName: displayName,
+        }).then(function () {
+          // Add user data to Firestore
+          return db.collection("members").add({
+            name: displayName,
+            email: email,
+            phone: phone,
+            NIC: NIC,
+            dob: dob,
+            address: address,
+            profession: profession,
+            bloodgroup: bloodgroup,
+            weight: weight,
+            height: height,
+          });
+        });
+      })
+      .then(function (docRef) {
+        alert("User " + displayName + " created successfully. Document ID: " + docRef.id);
+      })
+      .catch(function (error) {
+        // Handle Errors
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        alert("Error: " + errorMessage + " (Code: " + errorCode + ")");
+      });
+  }
+</script>
+
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="section" onclick="clickingfun(1)">Home</div>
+        <div class="section" onclick="clickingfun(2)">About</div>
+        <div class="section" onclick="clickingfun(3)">Locations</div>
+        <div class="section" onclick="clickingfun(4)">Tournaments</div>
+        <div class="section" onclick="clickingfun(6)">Articles</div>
+        <div class="section" onclick="clickingfun(7)">Contact Us</div>
+    </div>
+    
+    <div class="content-box2">
+        <h2 style="color: #fff;text-align:center;">Log In Form</h2>
+        <div class="contact-form">
+            <div class="input-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required placeholder="First name">
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="input-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="tel">
+            </div>
+            <div class="input-group">
+                <label for="weight">Weight (Kg) </label>
+                <input type="number" id="weight" name="weight">
+            </div>
+            <div class="input-group">
+                <label for="height">Height (cm) </label>
+                <input type="number" id="height" name="height">
+            </div>
+            <div class="input-group">
+                <label for="profession">Profession</label>
+                <input type="text" id="profession" name="profession">
+            </div>
+            <div class="input-group">
+                <label for="blood">Select Blood Group</label>
+                <select id="blood" name="blood">
+                    <option value="ns">Please select...</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Email address">
+            </div>
+    
+            <div class="input-group">
+                <label for="NIC">NIC</label>
+                <input type="text" id="NIC" name="NIC" required>
+            </div>
+  
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="">
+  
+            </div>
+    
+            <div class="submit-group">
+                <button class="submit-btn" onclick="createUser()">Submit</button>
+            </div>
+            <div id="fun" class="input-group"></div>
+        </div>
+    </div>
+    
+
+    
+
+</body>
+</html>

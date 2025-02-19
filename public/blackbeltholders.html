@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="progressbar.css">
+    <title>Black Belt Holders</title>
+    <script src="fun.js"></script>
+    <script src="progressbar.js"></script>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            /* Increased gap for better spacing */
+            padding: 20px;
+            max-width: 1400px;
+            /* Added max-width for larger screens */
+            margin: 0 auto;
+            /* Center the grid */
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .grid-item {
+            background: rgba(255, 255, 255, 0.1);
+            /* Transparent background */
+            -webkit-backdrop-filter: blur(8px);
+            /* For Safari */
+            backdrop-filter: blur(8px);
+            /* Glass effect */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            /* Increased padding */
+            text-align: center;
+            transition: transform 0.3s ease;
+            aspect-ratio: 3/4;
+            /* Added aspect ratio for consistent box sizes */
+            display: flex;
+            /* Added flex for centering */
+            align-items: center;
+            /* Center vertically */
+            justify-content: center;
+            /* Center horizontally */
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            max-height: 100%;
+            /* Added max-height */
+            width: 100%;
+            /* Changed from 100% to auto */
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .grid-item h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .grid-item p {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-bar">
+        <div class="section" onclick="clickingfun(1)">Home</div>
+        <div class="section" onclick="clickingfun(2)">About</div>
+        <div class="section" onclick="clickingfun(3)">Locations</div>
+        <div class="section" onclick="clickingfun(4)">Tournaments</div>
+        <div class="section" onclick="clickingfun(6)">Blackbelt Holders</div>
+        <div class="section" onclick="clickingfun(7)">Contact Us</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="images/black1.jpg" alt="Black Belt Holder 1">
+        </div>
+        <div class="grid-item">
+            <img src="images/black2.jpg" alt="Black Belt Holder 2">
+        </div>
+        <div class="grid-item">
+            <img src="images/black3.jpg" alt="Black Belt Holder 3">
+        </div>
+        <div class="grid-item">
+            <img src="images/black4.jpg" alt="Black Belt Holder 4">
+        </div>
+        <div class="grid-item">
+            <img src="images/black5.jpg" alt="Black Belt Holder 5">
+        </div>
+        <div class="grid-item">
+            <img src="images/black6.jpg" alt="Black Belt Holder 6">
+        </div>
+        <div class="grid-item">
+            <img src="images/black7.jpg" alt="Black Belt Holder 7">
+        </div>
+        <div class="grid-item">
+            <img src="images/black8.jpg" alt="Black Belt Holder 8">
+        </div>
+        <div class="grid-item">
+            <img src="images/black9.jpg" alt="Black Belt Holder 9">
+        </div>
+        <div class="grid-item">
+            <img src="images/black10.jpg" alt="Black Belt Holder 10">
+        </div>
+        <div class="grid-item">
+            <img src="images/black11.jpg" alt="Black Belt Holder 11">
+        </div>
+        <div class="grid-item">
+            <img src="images/black12.jpg" alt="Black Belt Holder 12">
+        </div>
+        <div class="grid-item">
+            <img src="images/black13.jpg" alt="Black Belt Holder 13">
+        </div>
+        <div class="grid-item">
+            <img src="images/black14.jpg" alt="Black Belt Holder 14">
+        </div>
+        <div class="grid-item">
+            <img src="images/black15.jpg" alt="Black Belt Holder 15">
+        </div>
+        <div class="grid-item">
+            <img src="images/black16.jpg" alt="Black Belt Holder 16">
+        </div>
+        <div class="grid-item">
+            <img src="images/black17.jpg" alt="Black Belt Holder 17">
+        </div>
+        <div class="grid-item">
+            <img src="images/black18.jpg" alt="Black Belt Holder 18">
+        </div>
+        <div class="grid-item">
+            <img src="images/black19.jpg" alt="Black Belt Holder 19">
+        </div>
+        <div class="grid-item">
+            <img src="images/black20.jpg" alt="Black Belt Holder 20">
+        </div>
+        <div class="grid-item">
+            <img src="images/black21.jpg" alt="Black Belt Holder 21">
+        </div>
+    </div>
+</body>
+
+</html>

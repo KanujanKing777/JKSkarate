@@ -29,6 +29,7 @@ body {
 .content {
     display: flex;
     align-items: center;
+    justify-content: center;
     max-width: 100%;
     margin: 40px auto;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -274,4 +275,42 @@ body {
     .text-content p {
         font-size: 1rem;
     }
+    .icon-container{
+        flex-direction: column;
+    }
+    .benefits-card{
+        flex-direction: column;
+        justify-content:center;
+        height: 100%;
+    }
+    .benefit-item{
+        width: 200%;
+    }
+    .image{
+        transform: scale(1.1);
+        display: none;
+    }
+    .heading{
+        font-size: 2.1rem;
+    }
+    .sub-heading{
+        font-size: 1rem;
+    }
+    .button1, .button2{
+        font-size: 0.9rem;
+    }
+    .content{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        background: linear-gradient(to right,  rgba(18,16,21, 0.7) 50%, rgba(18,16,21, 0.7) 50%), url('images/karate1.jpeg') right center;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+    
 }

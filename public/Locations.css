@@ -4,14 +4,88 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    background: linear-gradient(to right,  rgba(18,16,21, 0.75) 50%, rgba(18,16,21, 0.75) 50%), url('images/karatejaffna.jpeg') right center;
-    background-size: cover;
-    background-position: top;
+    background: linear-gradient(to right,  rgba(18, 16, 21, 0.75) 50%, rgba(18, 16, 21, 0.75) 50%), url('images/australia.png') right center;
+    background-size: contain;
+    background-position: center;
     font-family: Arial, sans-serif;
     color: #fff;
 }
+.content-box {
+    font-family: 'Arial', 'Helvetica Neue', sans-serif;
+    /* Use a clean, sans-serif font */
+    font-size: 16px;
+    /* Base font size for good readability */
+    line-height: 1.6;
+    width: 60vw;
+    height: 60vh;
+    max-width: 90vw;
+    margin: 5vh;
+    margin-bottom: 1vh;
+    background: rgba(247, 247, 247, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+#jaffna{
+  background: linear-gradient(to right,  rgba(18,16,21, 0.75) 50%, rgba(18,16,21, 0.75) 50%), url('images/jaffnanow.jpg') right center;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 
+}
+#mullaitivu{
+  background: linear-gradient(to right,  rgba(18,16,21, 0.75) 50%, rgba(18,16,21, 0.75) 50%), url('images/mullaithivunow.jpg') right center;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+#colombo{
+  background: linear-gradient(to right,  rgba(18,16,21, 0.75) 50%, rgba(18,16,21, 0.75) 50%), url('images/colombo.jpg') right center;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 
+}
+#australia{
+  background: linear-gradient(to right,  rgba(18,16,21, 0.75) 50%, rgba(18,16,21, 0.75) 50%), url('images/australia.jpg') right center;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+}
+#kilinochchi{
+  background: linear-gradient(to right,  rgba(18,16,21, 0.75) 50%, rgba(18,16,21, 0.75) 50%), url('images/killinochi.jpg') right center;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.content-box:hover{
+    transform: scale(1.07);
+}
 .office-location{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
     
+}
+@media (max-width: 768px) {
+  .office-location{
+    flex-direction: column;
+  }
+  .content-box{
+    width: 70vw;
+    
+  }
+  .content-box h3{
+    font-size: 18px;
+  }
+   
 }

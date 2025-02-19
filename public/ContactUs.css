@@ -114,8 +114,83 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: space-evenly;
+    flex-direction: column;
     height: 100vh;
     padding: 50px;
     background: linear-gradient(to right,  rgba(18,16,21, 0.75) 50%, rgba(18,16,21, 0.75) 50%), url('images/karatejaffna2.jpeg') right center;
     background-size: cover;
+}
+/* General styling for the container */
+.media {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25vw;
+    gap: 20px;
+    padding: 20px;
+    background:rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Styling for individual social media buttons */
+.social {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.social a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+/* Facebook-specific styling */
+.fb {
+    background-color: #3b5998;
+}
+
+.fb:hover {
+    background-color: #4c70ba;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Twitter-specific styling */
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.twitter:hover {
+    background-color: #0d8bf2;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Instagram-specific styling */
+.instagram {
+    background: radial-gradient(circle at 30% 30%, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.instagram:hover {
+    background: radial-gradient(circle at 30% 30%, #f67e4d, #e63a8a, #9741c4, #606be0);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width:768px){
+    .media{
+        width: 70vw;
+    }
+    .content-box2{
+        width: 80vw;
+    }
 }

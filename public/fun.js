@@ -18,10 +18,11 @@ function clickingfun(i){
     }else if(i== 2){
         newurl = "AboutUs.html";
     }else if(i== 4){
-        newurl = "Tournaments.html";
+        newurl = "Tournaments2.html";
     }else if(i== 6){
-        newurl = "Articles.html";
+        newurl = "blackbeltholders.html";
+    }else if(i == 10){
+        newurl = "Login.html";
     }
-
     window.open(preURL+'/'+newurl, "_self");
 }
