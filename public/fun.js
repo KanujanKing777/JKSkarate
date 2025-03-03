@@ -18,7 +18,7 @@ function clickingfun(i){
     }else if(i== 2){
         newurl = "AboutUs.html";
     }else if(i== 4){
-        newurl = "Tournaments2.html";
+        newurl = "tournamentsfinal.html";
     }else if(i== 6){
         newurl = "blackbeltholders.html";
     }else if(i == 10){
